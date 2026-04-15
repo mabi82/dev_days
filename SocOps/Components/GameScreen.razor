@@ -1,36 +1,46 @@
 @using SocOps.Models
 
-<div class="flex flex-col min-h-full bg-gray-50">
+<div class="flex flex-col min-h-full bg-app">
     <!-- Header -->
-    <header class="flex items-center justify-between p-3 bg-white border-b border-gray-200">
+    <header class="match-header flex items-center justify-between">
         <button
             @onclick="OnReset"
-            class="text-gray-500 text-sm px-3 py-1.5 rounded active:bg-gray-100">
-            ← Back
+            class="btn-ghost text-sm px-3 py-1.5 rounded transition-colors">
+            Back
         </button>
-        <h1 class="font-bold text-gray-900">Soc Ops</h1>
-        <div class="w-16"></div>
+
+        <div class="text-center">
+            <p class="kicker mb-2">Real Madrid Theme</p>
+            <h1 class="font-bold font-display text-ink">Soc Ops</h1>
+        </div>
+
+        <img
+            src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+            alt="Real Madrid crest"
+            class="crest-mini" />
     </header>
 
     <!-- Instructions -->
-    <p class="text-center text-gray-500 text-sm py-2 px-4">
-        Tap a square when you find someone who matches it.
+    <p class="instruction-chip text-sm">
+        Tap a square when someone matches the prompt.
     </p>
 
     <!-- Bingo indicator -->
     @if (HasBingo)
     {
-        <div class="bg-amber-100 text-amber-800 text-center py-2 font-semibold text-sm">
-            🎉 BINGO! You got a line!
+        <div class="victory-strip text-sm">
+            BINGO! You completed a winning line.
         </div>
     }
 
     <!-- Board -->
     <div class="flex-1 flex items-center justify-center p-3">
-        <BingoBoard
-            Board="@Board"
-            WinningSquareIds="@WinningSquareIds"
-            OnSquareClick="@OnSquareClick" />
+        <div class="board-shell p-3 w-full max-w-md">
+            <BingoBoard
+                Board="@Board"
+                WinningSquareIds="@WinningSquareIds"
+                OnSquareClick="@OnSquareClick" />
+        </div>
     </div>
 </div>
 

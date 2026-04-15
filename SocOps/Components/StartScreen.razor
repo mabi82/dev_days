@@ -1,21 +1,29 @@
-<div class="flex flex-col items-center justify-center min-h-full p-6 bg-gray-50">
-    <div class="text-center max-w-sm">
-        <h1 class="text-4xl font-bold text-gray-900 mb-2">Soc Ops</h1>
-        <p class="text-lg text-gray-600 mb-8">Social Bingo</p>
+<div class="flex flex-col items-center justify-center min-h-full p-6 bg-app">
+    <div class="w-full max-w-md text-center">
+        <div class="hero-card p-6 mb-6">
+            <img
+                src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg"
+                alt="Real Madrid crest"
+                class="crest mb-4"
+                loading="lazy" />
+            <p class="kicker mb-2">Soc Ops Match Night</p>
+            <h1 class="text-4xl font-bold font-display text-ink mb-2">Bernabeu Social Bingo</h1>
+            <p class="text-lg text-soft">Build your squad, find your people, and complete the winning line.</p>
+        </div>
 
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 mb-8">
-            <h2 class="font-semibold text-gray-800 mb-3">How to play</h2>
-            <ul class="text-left text-gray-600 text-sm space-y-2">
-                <li>• Find people who match the questions</li>
-                <li>• Tap a square when you find a match</li>
-                <li>• Get 5 in a row to win!</li>
+        <div class="panel-card p-6 mb-8 text-left">
+            <h2 class="font-semibold font-display text-ink mb-3">How to play</h2>
+            <ul class="text-soft text-sm space-y-2">
+                <li>Find someone who matches each football prompt.</li>
+                <li>Tap the square when you get a match.</li>
+                <li>Complete any line of 5 to hit bingo.</li>
             </ul>
         </div>
 
         <button
             @onclick="OnStart"
-            class="w-full bg-accent text-white font-semibold py-4 px-8 rounded-lg text-lg active:bg-accent-light transition-colors">
-            Start Game
+            class="w-full btn-primary font-semibold py-4 px-8 rounded-lg text-lg transition-colors">
+            Kick Off
         </button>
     </div>
 </div>

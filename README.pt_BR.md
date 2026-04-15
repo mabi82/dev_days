@@ -1,4 +1,6 @@
 <!-- l10n-sync: source-file="README.md" -->
+🌐 [English](README.md) | [Danish](README.da.md) | [Español](README.es.md)
+
 # Soc Ops
 
 Jogo de Social Bingo para encontros presenciais. Encontre pessoas que correspondam às perguntas e consiga 5 em uma fileira!

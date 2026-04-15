@@ -1,6 +1,8 @@
 <!-- l10n-sync: source-file="workshop/GUIDE.md" -->
 # Soc Ops — VS Code GitHub Copilot Agent Lab
 
+🌐 [English](../GUIDE.md) | [Danish](../da/GUIDE.md) | [Español](../es/GUIDE.md)
+
 [🎮 Demo ao Vivo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Guia do Lab](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../../README.pt_BR.md)
 
 ---

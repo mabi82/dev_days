@@ -1,5 +1,7 @@
 # Soc Ops — VS Code GitHub Copilot Agent Lab
 
+🌐 [Danish](da/GUIDE.md) | [Español](es/GUIDE.md) | [Português (BR)](pt_BR/GUIDE.md)
+
 [🎮 Live Demo](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/) • [📚 Lab Guide](https://dotnet-presentations.github.io/vscode-github-copilot-agent-lab/docs/) • [← README](../README.md)
 
 ---
