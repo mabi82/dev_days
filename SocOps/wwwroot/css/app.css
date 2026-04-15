@@ -261,6 +261,32 @@ button:disabled {
     object-fit: contain;
 }
 
+.laurids-badge,
+.laurids-mini-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    font-family: "Cinzel", "Times New Roman", serif;
+    font-weight: 700;
+    color: var(--rm-white);
+    background: linear-gradient(135deg, var(--rm-red), var(--rm-red-deep));
+    border: 2px solid rgba(200, 170, 101, 0.9);
+}
+
+.laurids-badge {
+    width: 72px;
+    height: 72px;
+    font-size: 1.8rem;
+    box-shadow: 0 8px 20px rgba(153, 20, 41, 0.25);
+}
+
+.laurids-mini-badge {
+    width: 28px;
+    height: 28px;
+    font-size: 0.85rem;
+}
+
 .btn-primary {
     background: linear-gradient(135deg, var(--rm-red), var(--rm-red-deep));
     color: var(--rm-white);
@@ -452,6 +478,12 @@ button:disabled {
     .crest {
         width: 60px;
         height: 60px;
+    }
+
+    .laurids-badge {
+        width: 60px;
+        height: 60px;
+        font-size: 1.45rem;
     }
 
     .match-header {
